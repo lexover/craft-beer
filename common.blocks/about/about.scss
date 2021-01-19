@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.about {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  width: 100%;
+  height: 100vh;
+  background-color: #be8819;
+  background-image: url("~/assets/images/beer-factory.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  align-content: center;
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .about {
+    flex-flow: column-reverse nowrap;
+    background-color: #200803;
+    background-size: auto 48%;
+    background-position: top;
+  }
+}

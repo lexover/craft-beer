@@ -1,0 +1,50 @@
+// Colors
+$white:      #fff;
+$black:      #000;
+
+$primary:    $white;
+$accent:     #DDAC30;
+$light:      gray;
+$dark:       black;
+
+$transparent: rgba(black, 0);
+$transparent-black: rgba(black, .6);
+
+// Popup elements
+$z-bottom: 1;
+$z-top: 10; 
+
+// Spacing
+$spacer: 2rem;
+
+//Body
+$body-bg:    #070C03;
+$body-color: $white;
+
+// Links
+$link-color: darken($accent, 15%);
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// Components
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+
+// Fonts
+$font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif, 'Segoe UI', 'Helvetica Neue', Arial;
+$font-family-base: $font-family-sans-serif;
+
+// Navbar
+$navbar-height: 70px;
+$navbar-background: $transparent-black;
+$navbar-z: $z-top;
+
+// Menu
+$menu-width: 20vw;
+$menu-width-mobile: 100vw;
+$menu-background: $transparent-black;
+$menu-z: $z-top; 
+
+// Aspect ratio
+$mobile-ratio: '1/1';

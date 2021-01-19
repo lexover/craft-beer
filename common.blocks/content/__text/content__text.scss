@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+
+.content__text {
+  color: $white;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.content__text_accented {
+  color: $primary;
+  font-weight: 500;
+}

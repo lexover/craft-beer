@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  z-index: $z-top;
+  background-color: $navbar-background;
+  width: 100%;
+  height: $navbar-height;
+  animation: navbar ease-out 1s;
+}
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

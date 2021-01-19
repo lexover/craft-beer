@@ -1,0 +1,18 @@
+@import "../../variables.scss";
+
+.contacts__item {
+  margin: 2vh 2vw;
+  font-size: 2rem;
+  font-weight: 300;
+
+  i {
+    margin-right: $spacer;
+  }
+
+  a {
+    color: $primary;
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+}

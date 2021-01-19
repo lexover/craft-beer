@@ -1,0 +1,10 @@
+$ratio_6_19: 56.25%;
+$ratio_4_3: 75%;
+$ratio_1_1: 100%;
+
+.iframe__container {
+  position: relative;
+  padding-top: $ratio_4_3;
+  width: 100%;
+  overflow: hidden;
+}

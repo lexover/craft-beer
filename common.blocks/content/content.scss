@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.content {
+  align-self: center;
+  margin: auto;
+  padding: 1vh 4vw 0 2vw;
+  width: 50vw;
+  text-align: justify;
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .content {
+    width: 100%;
+  }
+}

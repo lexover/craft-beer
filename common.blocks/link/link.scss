@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.link {
+  text-decoration: $link-decoration;
+  &:hover {
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+.link_type_color {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.link_type_scale {
+  text-align: center;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.15);
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.header__content {
+  display: block;
+  margin: auto;
+  padding: 1% 13% 0 16%;
+  width: 50vw;
+  animation: caption linear 3s;
+}
+
+@keyframes caption {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .header__content {
+    padding: 7vw;
+    width: auto;
+  }
+}

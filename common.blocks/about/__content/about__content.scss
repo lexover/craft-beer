@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.about__content {
+  padding-left: 20vw;
+}
+
+.about__content_animated {
+  transform: translateX(100vw);
+}
+
+.about__content_animated_in {
+  animation: about-content ease-out 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes about-content {
+  0% {
+    transform: translateX(100vw);
+  }
+  90% {
+    transform: translateX(-2vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .about__content {
+    padding: 1vw;
+    width: 90%;
+  }
+}

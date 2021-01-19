@@ -1,0 +1,24 @@
+@mixin clipped-shape($x1, $y1, $x2, $y2, $x3, $y3, $x4, $y4, $margin) {
+  shape-outside: polygon($x1 $y1, $x2 $y2, $x3 $y3, $x4 $y4);
+  clip-path: polygon($x1 $y1, $x2 $y2, $x3 $y3, $x4 $y4);
+  -webkit-clip-path: polygon($x1 $y1, $x2 $y2, $x3 $y3, $x4 $y4);
+  shape-margin: $margin;
+}
+
+@mixin hide-element {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+@mixin opacity($val) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=calc(#{$val}*100))";
+  filter: alpha(opacity=calc(#{$val}* 100));
+  -moz-opacity: $val;
+  -khtml-opacity: $val;
+  opacity: $val;
+}

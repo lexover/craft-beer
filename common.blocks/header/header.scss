@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: $body-bg;
+  background-image: url("~/assets/images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: 61vw;
+  background-position: 103% 64%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .header {
+    flex-flow: column nowrap;
+    background-size: 70vw;
+    background-position: 103% 30%;
+  }
+}

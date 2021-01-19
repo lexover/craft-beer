@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.slide-1__glass {
+  transform: translate(19vw, 26vh);
+  z-index: 4;
+  height: 70%;
+  animation: glass ease-out 1s;
+}
+
+@keyframes glass {
+  0% {
+    transform: translate(120vw, 26vh);
+  }
+  100% {
+    transform: translate(19vw, 26vh);
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  $x: 35vw;
+  $y: 16vh;
+
+  .slide-1__glass {
+    height: 68%;
+    transform: translate($x, $y);
+  }
+  @keyframes glass {
+    0% {
+      transform: translate(120vw, $y);
+    }
+    100% {
+      transform: translate($x, $y);
+    }
+  }
+}

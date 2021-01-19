@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.about__figure {
+  display: flex;
+  width: 70vw;
+  height: 100vh;
+  align-content: center;
+  background-color: $transparent-black;
+  @media (min-aspect-ratio: $mobile-ratio) {
+    @include clipped-shape(30%, 0, 100%, 0, 100%, 100%, 0, 100%, 10px);
+  }
+}
+
+.about__figure_animated {
+  transform: translateX(100vw);
+}
+
+.about__figure_animated_in {
+  animation: about-figure-animation ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes about-figure-animation {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .about__figure {
+    background-color: $transparent;
+    height: 55vh;
+    width: 100vw;
+  }
+}

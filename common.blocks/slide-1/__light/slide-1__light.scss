@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.slide-1__light {
+  z-index: $z-bottom;
+  background: radial-gradient(
+    at top left,
+    rgba(255, 184, 0, 0.4),
+    rgba(255, 184, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+  width: 100vh;
+  height: 100vh;
+  animation: light ease-out 2s;
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .slide-1__light {
+    width: 100vw;
+    height: 100vw;
+  }
+}

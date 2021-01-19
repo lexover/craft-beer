@@ -1,0 +1,20 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.product-selector {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+  z-index: $z-top;
+
+  input {
+    @include hide-element;
+    &:active + .product-selector__button {
+      transform: scale(1.5);
+    }
+    &:checked + .product-selector__button {
+      transform: scale(1.5);
+    }
+  }
+}

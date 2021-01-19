@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.menu {
+  position: fixed;
+  transform: translateX(-$menu-width);
+  z-index: $z-top;
+  margin-top: 70px;
+  background-color: $menu-background;
+  width: $menu-width;
+  height: 100vh;
+  font-size: 1rem;
+  transition: 1s;
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .menu {
+    transform: translateX(-100vw);
+    width: 100vw;
+    font-size: 2rem;
+  }
+}

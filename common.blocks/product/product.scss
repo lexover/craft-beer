@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.product {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 90vh;
+}
+
+.product_hidden {
+  display: none;
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .product {
+    flex-flow: column nowrap;
+  }
+}

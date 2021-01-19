@@ -1,0 +1,43 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test:unit",
+    "build": "webpack",
+    "dev": "npm run build serve -- --mode development --watch",
+    "prod": "npm run build -- --mode production"
+  },
+  "author": "lexover",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "bemdecl-to-fs-loader": "0.0.4",
+    "bemjson-to-decl": "^1.0.3",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "file-loader": "^6.2.0",
+    "html2bemdecl-loader": "^1.0.5",
+    "html2bemjson": "^1.10.0",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "path": "^0.12.7",
+    "sass-loader": "^10.1.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.1"
+  }
+}

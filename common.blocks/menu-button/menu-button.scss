@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.menu-button {
+  margin: 9px 13px auto 27px;
+  cursor: pointer;
+
+  div {
+    margin: 9px 0;
+    background-color: $primary;
+    width: 42px;
+    height: 4px;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    .menu-button__bar-1 {
+      animation: bar linear 0.3s;
+    }
+
+    .menu-button__bar-2 {
+      animation: bar linear 0.3s;
+      animation-delay: 0.1s;
+    }
+
+    .menu-button__bar-3 {
+      animation: bar linear 0.3s;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes bar {
+      50% {
+        transform: translateX(5px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+}

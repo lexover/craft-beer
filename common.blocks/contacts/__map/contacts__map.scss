@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.contacts__map {
+  margin-left: 4vw;
+  width: 50vw;
+  align-self: center;
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .contacts__map {
+    margin: 90px 40px;
+    width: 90%;
+    height: 0;
+  }
+}

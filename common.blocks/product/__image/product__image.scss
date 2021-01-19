@@ -1,0 +1,76 @@
+@import "../../variables.scss";
+
+.product__image {
+  transform: translate(20vw, 27vh);
+  z-index: $z-bottom;
+  width: 53vw;
+  img {
+    height: 56vh;
+  }
+}
+
+@media (max-width: 800px) {
+  img {
+    height: 40vh;
+  }
+}
+.product__image_animated {
+  transform: translate(-25vw, 60vh) scale(1.5);
+}
+
+.product__image_animated_in {
+  animation: glass_in_animation ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.product__image_animated_out {
+  animation: glass_out_animation ease-out 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes glass_in_animation {
+  0% {
+    transform: translate(-25vw, 60vh) scale(1.5);
+  }
+  100% {
+    transform: translate(20vw, 27vh) scale(1);
+  }
+}
+
+@keyframes glass_out_animation {
+  0% {
+    transform: translate(24vw, 27vh);
+  }
+  100% {
+    transform: translate(-50vw, 27vh) scale(1);
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  $x: 33vw;
+  $y: 11vh;
+
+  .product__image {
+    transform: translate($x, $y);
+    width: 100vw;
+    height: 47vh;
+    img {
+      height: 26vh;
+    }
+  }
+
+  @keyframes glass_in_animation {
+    0% {
+      transform: translate(-25vw, 60vh) scale(1.5);
+    }
+    100% {
+      transform: translate($x, $y) scale(1);
+    }
+  }
+
+  @keyframes glass_out_animation {
+    100% {
+      transform: translate(-50vw, $y);
+    }
+  }
+}

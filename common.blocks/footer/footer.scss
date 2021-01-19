@@ -1,0 +1,8 @@
+@import "../variables.scss";
+
+.footer {
+  height: 5vh;
+  background: linear-gradient(120deg, $body-bg, $body-bg, black);
+  padding: 1.5vh 1vw;
+  text-align: right;
+}

@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.slide-1__hop {
+  transform: translate(27vw, 71vh);
+  z-index: 5;
+  height: 25%;
+  animation: hop ease-out 1.3s;
+}
+
+@keyframes hop {
+  0% {
+    transform: scale(2) translate(100vw, 100vh);
+  }
+  100% {
+    transform: scale(1) translate(27vw, 71vh);
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  $x: 47vw;
+  $y: 39vh;
+
+  .slide-1__hop {
+    transform: translate($x, $y);
+    height: 23%;
+  }
+  @keyframes hop {
+    0% {
+      transform: scale(2) translate(100vw, 0);
+    }
+    100% {
+      transform: scale(1) translate($x, $y);
+    }
+  }
+}

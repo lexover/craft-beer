@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.slide-1__cask {
+  transform: translate(-1vw, 13vh);
+  z-index: 2;
+  height: 74%;
+  animation: cask ease-out 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cask {
+  0% {
+    transform: translate(-40vw, 13vh) scale(0.7);
+  }
+  100% {
+    transform: translate(-5vw, 13vh) scale(1);
+  }
+}
+
+@media (max-aspect-ratio: $mobile-ratio) {
+  .slide-1__cask {
+    height: 65%;
+    transform: translate(-7vw, 13vh);
+  }
+  @keyframes cask {
+    0% {
+      transform: translate(-40vw, 13vh) scale(0.7);
+    }
+    100% {
+      transform: translate(-7vw, 13vh) scale(1);
+    }
+  }
+}
