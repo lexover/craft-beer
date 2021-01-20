@@ -20,8 +20,8 @@ const smoothScrollTo = (to, duration) => {
   // c = change in value
   // d = duration
   const easeInOutQuad = (t, b, c, d) => {
-    let time = t / d / 2;
-    if (time < 1) return (c / 2) * time * time + b;
+    let time = t / (d / 2);
+    if (time < 1) return (c / 2) * (time * time) + b;
     time -= 1;
     return (-c / 2) * (time * (time - 2) - 1) + b;
   };
