@@ -1,11 +1,11 @@
 {
-  "name": "my-webpack-project",
+  "name": "craft-beer",
   "version": "1.0.0",
-  "description": "My webpack project",
-  "main": "index.js",
+  "description": "Craft beer landing",
+  "main": "pages/index.js",
   "scripts": {
     "test": "test:unit",
-    "build": "webpack",
+    "build": "node ./node_modules/webpack/bin/webpack.js",
     "dev": "npm run build serve -- --mode development --watch",
     "prod": "npm run build -- --mode production"
   },

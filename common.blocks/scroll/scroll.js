@@ -33,19 +33,27 @@ function scrollByElementRef(element) {
   }
 }
 
+function scrollDown() {
+  if (currentReference < references.length - 1) {
+    currentReference += 1;
+    scrollToElement(`.${references[currentReference]}`);
+  }
+}
+
+function scrollUp() {
+  if (currentReference > 0) {
+    currentReference -= 1;
+    scrollToElement(`.${references[currentReference]}`);
+  }
+}
+
 // Scroll by mouse wheel
 function onWheel(event) {
   const e = event || window.event;
   if (e.deltaY >= 0) {
-    if (currentReference < references.length - 1) {
-      currentReference += 1;
-      scrollToElement(`.${references[currentReference]}`);
-    }
+    scrollDown();
   } else if (e.deltaY <= 0) {
-    if (currentReference > 0) {
-      currentReference -= 1;
-      scrollToElement(`.${references[currentReference]}`);
-    }
+    scrollUp();
   }
 }
 
@@ -55,5 +63,5 @@ function updateScroll() {
 }
 
 export {
-  updateReferences, scrollByElementRef, onWheel, updateScroll,
+  updateReferences, scrollByElementRef, onWheel, updateScroll, scrollDown, scrollUp,
 };
