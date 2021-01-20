@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .slide-1__wheat {
     display: none;
   }

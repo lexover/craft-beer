@@ -13,3 +13,10 @@
     transform: scale(1.5);
   }
 }
+
+@media (max-height: 400px) {
+  .product-selector__button {
+    width: 24px;
+    height: 24px;
+  }
+}

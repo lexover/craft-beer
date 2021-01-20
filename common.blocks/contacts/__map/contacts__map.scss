@@ -6,7 +6,7 @@
   align-self: center;
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .contacts__map {
     margin: 90px 40px;
     width: 90%;

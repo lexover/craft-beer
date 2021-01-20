@@ -15,7 +15,7 @@
   text-shadow: 2px 2px 3px black;
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .contacts {
     flex-flow: column nowrap;
     background-size: 100vw;

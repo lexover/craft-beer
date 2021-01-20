@@ -12,10 +12,16 @@
   transition: 1s;
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .menu {
     transform: translateX(-100vw);
     width: 100vw;
     font-size: 2rem;
+  }
+}
+
+@media (max-height: 400px) {
+  .menu {
+    margin-top: 40px;
   }
 }

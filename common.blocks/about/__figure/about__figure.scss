@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .about__figure {
     background-color: $transparent;
     height: 55vh;

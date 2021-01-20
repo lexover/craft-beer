@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .product__content {
     width: 90%;
     height: 45vh;

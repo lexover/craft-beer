@@ -37,3 +37,13 @@
     }
   }
 }
+
+@media (max-height: 400px) {
+  .menu-button {
+    margin: 5px 13px auto 27px;
+      div {
+        margin: 5px 0;
+        height: 3px;
+      }
+  }
+}

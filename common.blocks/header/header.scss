@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .header {
     flex-flow: column nowrap;
     background-size: 70vw;

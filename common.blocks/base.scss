@@ -25,3 +25,9 @@ html {
     font-size: 10px;
   }
 }
+
+@media (max-height: 400px) {
+  html {
+    font-size: 8px;
+  }
+}

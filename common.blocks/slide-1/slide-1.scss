@@ -10,7 +10,7 @@
   height: 100vh;
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .slide-1 {
     height: 50vh;
     width: 100vw;

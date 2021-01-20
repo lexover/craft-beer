@@ -13,7 +13,7 @@
   align-content: center;
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .about {
     flex-flow: column-reverse nowrap;
     background-color: #200803;

@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   $x: 33vw;
   $y: 11vh;
 

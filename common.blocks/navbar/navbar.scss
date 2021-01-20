@@ -21,3 +21,9 @@
     transform: translateY(0);
   }
 }
+
+@media (max-height: 400px) {
+  .navbar {
+    height: 40px;
+  }
+}

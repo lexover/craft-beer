@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .header__content {
     padding: 7vw;
     width: auto;

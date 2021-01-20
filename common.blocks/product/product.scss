@@ -10,7 +10,7 @@
   display: none;
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .product {
     flex-flow: column nowrap;
   }

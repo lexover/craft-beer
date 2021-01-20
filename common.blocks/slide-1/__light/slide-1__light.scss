@@ -22,7 +22,7 @@
   }
 }
 
-@media (max-aspect-ratio: $mobile-ratio) {
+@media (orientation: portrait) {
   .slide-1__light {
     width: 100vw;
     height: 100vw;
