@@ -7,7 +7,8 @@
   height: 100vh;
   align-content: center;
   background-color: $transparent-black;
-  @media (min-aspect-ratio: $mobile-ratio) {
+
+  @media (orientation: landscape) {
     @include clipped-shape(30%, 0, 100%, 0, 100%, 100%, 0, 100%, 10px);
   }
 }

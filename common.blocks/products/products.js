@@ -1,7 +1,7 @@
 import isAnimationSupported from '../utils/animation';
 import { addListener as selectorAddListener } from '../product-selector/product-selector';
 
-const productsTop = document.querySelector('.products').getBoundingClientRect().top;
+const productsTop = document.querySelector('.products').getBoundingClientRect().top - 10;
 let currentProduct = 1;
 
 function startAnimation() {
